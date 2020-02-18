@@ -31,9 +31,11 @@ collections:
     label: "Content pages"
     folder: "src/pages/content"
     create: true
+    slug: "{{urlTitle}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "content-page"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "URL title", name: "urlTitle", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       
   - name: "pages"
