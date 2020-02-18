@@ -28,12 +28,13 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
   
   - name: "content-pages"
-    label: "Content page"
-    folder: "src/content-pages"
+    label: "Content pages"
+    folder: "src"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "content-page"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
       
   - name: "pages"
     label: "Pages"
