@@ -26,10 +26,17 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
+  
+  - name: "content-pages"
+    label: "Content page"
+    folder: "src/content-pages"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "content-page"}
+      - {label: "Title", name: "title", widget: "string"}
+      
   - name: "pages"
     label: "Pages"
-    create: true
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
