@@ -29,7 +29,7 @@ collections:
   
   - name: "content-pages"
     label: "Content pages"
-    folder: "src/pages"
+    folder: "src/pages/content"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "content-page"}
