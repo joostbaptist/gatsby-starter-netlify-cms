@@ -39,7 +39,7 @@ const ContentPage = ({ data }) => {
       <ContentPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        content={"abc"}
+        ccontent={post.html}
       />
     </Layout>
   )
